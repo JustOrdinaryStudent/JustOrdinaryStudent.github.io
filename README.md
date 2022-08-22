@@ -1,2 +1,2 @@
-# JustOrdinaryStudent.github.io
-My first (second) site
+# Анатолий Дурденов
+Мой первый (второй) сайт
