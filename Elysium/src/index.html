@@ -3,187 +3,231 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="My Page">
-    <meta name="author" content="S.A.">
+    <meta name="description" content="Страница">
+    <meta name="author" content="%username">
     <meta name="robots" content="all">
-
-    <meta property="og:title" content="My Page Title">
-
-    <title>Шапка Веб-разработчика</title>
+    <meta property="og:title" content="Страница">
+    <title>%username - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <header>
         <nav>
-            <div class="logo">Я - горе веб-разработчик</div>
+            <div class="logo">%username</div>
             <div class="menu">
                 <ul>
                     <li>Обо мне</li>
                     <li>Услуги</li>
                     <li>Кейсы</li>
-                    <li>Прайсы</li>
+                    <li>Прайс</li>
                     <li>Отзывы</li>
                     <li>Контакты</li>
                 </ul>
             </div>
         </nav>
     </header>
-    
-    <div class="main"><div class="title__container">
-        <h1>Привет, Я начинающий разработчик костылей, но благодаря урокам Андрея Брауна, я превращу <big>это</big> <small>позорище</small> в <em>Шедевр Искусства</em></h1>
-        <h4>Ну а так, я типичный фулл стек веб-разработчик</h4>
-        <input type="submit" value="Обо мне">
-        <input type="submit" value="Мои работы">
-    </div></div>
 
-    <div class="main2"><div class="title__container2">
-        <h2>Обо мне</h2>
-        <img src="https://static.wikia.nocookie.net/deusex/images/6/6b/JCDenton2.png/revision/latest?cb=20110907150643&path-prefix=en" alt="DeusEx_Guy" style="width:15%">
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere natus inventore consequuntur quaerat vel enim asperiores porro quam totam. Magnam hic facilis assumenda iure architecto, eaque itaque ad adipisci maxime!</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam, hic rerum quis excepturi velit repellendus quam blanditiis soluta possimus, aspernatur. Non tenetur consectetur porro sed esse, eius placeat fugit.</p>
-        
-        <input type="submit" value="Скачать резюме">
-    </div></div>
-
-    <div class="main3"><div class="title__container3">
-        
-        <h3>Что я хотел бы уметь?</h3>
-        
-        <div class="item_skills">
-            <p>Веб-дизайнинг</p>
-            <p><em>Lorem ipsum dolor sit amet.</em></p>
-        </div>
-        <div class="item_skills">           
-            <p>Разработка</p>
-            <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, odio.</em></p>
-        </div>
-        <div class="item_skills">
-            <p>CEO Оптимизация</p>
-            <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
-        </div>
-        <div class="item_skills">   
-            <p>Маркетинг</p>
-            <p><em>Lorem ipsum dolor.</em></p>
+    <div class="main">
+        <div class="title__container">
+            <h1>Привет <br> Я %username</h1>
+            <h4>Начинающий веб-разработчик</h4>
+            <input type="submit" value="Обо мне">
+            <input type="submit" value="Мои работы">
         </div>
     </div>
 
-    <div class="main4"><div class="title__container4">
-        <h2>Кейсы (ящики)</h2>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellat omnis, accusantium atque possimus iusto!</p>
-        
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3TuhywAeTNX9zHZ67ecUSnH4FozCygbev5Q&usqp=CAU" alt="CaseCSGO" style="width: 15%"> 
-        
-        <div class="item_skills">
-            <p>Client:</p>
-            <p>Какая-то компания.</p>  
-        </div>
-            
-        <div class="item_skills">
-            <p>Название проекта</p>
-            <p>Lorem ipsum dolor и т.д.</p>
-        </div>
-        
-        <div class="item_skills">
-            <p>Website</p>
-            <a href="https://www.google.com" target="_blank">www.website.web</a>
-            <input type="button" value="Зайти на сайт">
-        </div>
-        
-    </div></div>
+    <div class="about_me">
+        <div class="about_container">
 
-    <div class=main5><div class="title__container5">
-    <form action="#">
-       
-        <h2>Расчет стоимости</h2>
-        <h3>Тип сайта:</h3>
-        <select name="list1" id="list_1" multiple>
-            <option value="Opt1">Крутой</option>
-            <option value="Opt2">Бюджетный</option>
-            <option value="Opt3">Деловой</option>
-            <option value="Opt4">Рабочий</option>
-        </select>
-                
-        <h3>Дизайн</h3>
-        <select name="list2" id="list_2">
-            <option value="Opt5">Красивый</option>
-            <option value="Opt6">Ретро</option>
-            <option value="Opt7">Цвета осени</option>
-            <option value="Opt8">Ну сбацай там своего что-то</option>
-        </select>
-        
-        <h3>Адаптивность</h3>
-        <input type="checkbox" id="chkbx1"> <b>Пускай будет</b>
-        <br>
-        <br>
-        <br>        
-        <p>Сроки <input type="number" style="width: 30%" placeholder="Ну тут сначала посмотреть нужно"></p>
-        <p>Стоимость <input type="number" placeholder="Ща посчитаем"></p>
-        
-        <p><input type="reset" value="Давай по-новой, Миша"></p>
-     </form>    
-    </div></div>
-    
-    <div class="main6">
-        <h>Статистика</h>
+            <h2>Обо мне</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt officia unde, necessitatibus. Nihil, obcaecati laborum unde laudantium voluptatem odio esse quod accusantium at, aspernatur modi, expedita voluptate adipisci excepturi harum!
+                <br>
+                <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus facilis praesentium consequatur minima nihil veniam maxime, cum, eos asperiores porro ut, magni voluptatibus! Fugit error ad omnis delectus, nihil quidem.
+            </p>
+             <img src="img/button_download.png" alt="иконка_скачать">
+            <input type="submit" value="Скачать резюме">
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="skills_container">
+
+            <h3>Что я изучаю?</h3>
+
             <div class="item_skills">
-                <img src="img/Happy_clients.png" alt="Happy Face">
-                <p>0 клиентов</p>
-                <p>Счастливых клиентов</p>   
-            </div> 
-            <div class="item_skills">
-                <img src="img/Time.png" alt="Clocks">
-                <p>240 минут</p>
-                <th>Часов работы</th>
-            </div> 
-            <div class="item_skills">
-                <img src="img/Completed.png" alt="Checkbox">
-                <p>0,2</p>
-                <p>Проектов завершено</p>
+                <img src="img/pc.png" alt="PC">
+                <p class="orange_text">Веб-дизайнинг</p>
+                <p class="skill_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero at saepe totam fugiat beatae, ipsa aspernatur. Earum eius perferendis odio!</p>
             </div>
-            <div class="item_skills">       
-                <img src="img/Championships_Cups.png" alt="Achievements">
-                <p>0</p>
-                <p>Наград получено</p>
-            </div>       
+            <div class="item_skills">
+                <img src="img/log.png" alt="script">
+                <p class="orange_text">Разработка</p>
+                <p class="skill_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptatum, sed hic odio? Quibusdam, cumque saepe voluptate dolorem! Unde, distinctio!</p>
+            </div>
+            <div class="item_skills">
+                <img src="img/log2.png" alt="rocket">
+                <p class="orange_text">CEO Оптимизация</p>
+                <p class="skill_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt modi sint eum velit, laboriosam mollitia repudiandae explicabo. Dolorum, quas est.</p>
+            </div>
+            <div class="item_skills">
+                <img src="img/log3.png" alt="megaphone">
+                <p class="orange_text">Маркетинг</p>
+                <p class="skill_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, illum maxime praesentium ducimus minus, doloremque eos laborum ipsum alias quos.</p>
+            </div>
+        </div>
     </div>
-    <div class="main7"><div class="title__container7">
-        <h2>Отзывы</h2>
-        <img src="https://www.meme-arsenal.com/memes/79af322410d4bf3e57a6dbe56e36997c.jpg" alt="Anon" style="width: 20%">
-        <p><em>Миша, 30 лет</em></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui maiores reprehenderit nesciunt dolores delectus soluta distinctio illum aperiam libero tenetur consectetur pariatur excepturi sequi laboriosam commodi doloremque, aliquam odit laborum!</p>
-        <h2>Мои контакты</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dicta quos adipisci illum eos corrupti?</p>
-        
-        <div class="item_skills">
-            <img src="" alt="домик_картинка">
-            <p>Какой-то город, какая-то улица</p>
+
+    <div class="cases">
+        <div class="cases_container">
+            <h2>Кейсы</h2>
+
+            <p class="cases_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+            <div class="item_cases_1">
+                <p class="name_case">Client:</p>
+                <br>
+                <p>Какая-то компания.</p>
+                <br>
+            </div>
+
+            <div class="item_cases_2">
+                <p class="name_case">Название проекта</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi amet, fuga. Suscipit error excepturi fuga eaque nisi dignissimos aspernatur unde, distinctio, facere neque totam, maxime ipsa sequi fugiat nesciunt ipsam labore est id delectus incidunt magni nostrum aperiam nulla ipsum! Pariatur, fuga voluptas aut neque. Porro dolores, veritatis deserunt magni? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic labore eaque placeat sequi enim necessitatibus quo sint molestias rem. Perferendis quia commodi, repudiandae corrupti, harum sint saepe tempora veritatis officia eveniet soluta sequi illo aliquid quidem iure, dicta optio. Nihil possimus aperiam porro obcaecati, numquam fuga libero nam ullam natus beatae qui dolore aliquam ipsa praesentium blanditiis assumenda ex?</p>
+                <br>
+            </div>
+
+            <div class="item_cases_3">
+                <p class="name_case">Website</p>
+                <br>
+                <a href="https://www.google.com" target="_blank">www.website.web</a>
+                <br>
+                <br>
+                <input type="button" value="Зайти на сайт">
+                <br>
+            </div>
+
         </div>
-        <div class="item_skills">
-            <img src="" alt="письмо_картинка">
-            <p>Моя почта</p>
+    </div>
+
+    <div class="calculator">
+        <div class="calculator_container">
+            <h2>Расчет стоимости</h2>
+            <h3>Тип Сайта</h3>
+            <select name="type" id="typeSite">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">Сайт-визитка</option>
+                <option value="3">Корпоративный сайт</option>
+                <option value="4">Интернет-магазин</option>
+            </select>
+            <h3>Дизайн</h3>
+            <select name="type" id="typeSite">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">Шаблонный</option>
+                <option value="3">Уникальный</option>
+                <option value="4">WOW-Дизайн</option>
+            </select>
+            <h3>Адаптивность</h3>
+            <select name="type" id="typeSite">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">Только ПК</option>
+                <option value="3">Только мобильный сайт</option>
+                <option value="4">ПК + Мобильный</option>
+            </select>
+            <hr>
+            <div class="calculator_footer">
+                <div class="days">
+                    <p>Сроки</p>
+                    <p>0</p>
+                </div>
+                 <div class="price">
+                    <p>Стоимость</p>
+                    <p>0</p>
+                </div>
+            </div>
         </div>
-        <div class="item_skills">
-            <img src="" alt="телефон_картинка">
-            <p>Мой номер телефона</p>
+    </div>
+
+    <div class="stats">
+        <div class="stats_container">
+            <h2>Статистика</h2>
+            <div class="item_stats">
+                <img src="img/logo1.png" alt="Happy_Face">
+                <p class="stats_numbers">0</p>
+                <p class="stats_descript">Счастливых клиентов</p>
+            </div>
+            <div class="item_stats">
+                <img src="img/logo2.png" alt="Clocks">
+                <p class="stats_numbers">20</p>
+                <p class="stats_descript">Часов работы</p>
+            </div>
+            <div class="item_stats">
+                <img src="img/logo3.png" alt="Checkbox">
+                <p class="stats_numbers">0,5</p>
+                <p class="stats_descript">Проектов завершено</p>
+            </div>
+            <div class="item_stats">
+                <img src="img/logo4.png" alt="Achievements">
+                <p class="stats_numbers">0</p>
+                <p class="stats_descript">Наград получено</p>
+            </div>
         </div>
-        <form action="#">
-            <h2>Оставьте мне сообщение</h2>
-            <input type="text" name="client_name_box" placeholder="Имя">
-            <input type="text" name="email_box" placeholder="Email">
+    </div>
+
+    <div class="reviews">
+        <div class="reviews_container">
+            <h2>Отзывы</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
+                <br>
+                <br>
+                <em><b>Михаил</b>, Ген директор ПАО “Газпром”.</em>
+            </p>
+        </div>
+    </div>
+
+    <div class="my_contacts">
+        <div class="my_contacts_container">
+            <h2>Мои контакты</h2>
+            <p class="mcp1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dicta quos adipisci illum eos corrupti?</p>
+
+            <div class="item_cont">
+                <img src="img/geo.png" alt="домик_картинка">
+                <p>Улица</p>
+            </div>
+            <div class="item_cont">
+                <img src="img/convert.png" alt="письмо_картинка">
+                <p>info@mycompany.ru</p>
+            </div>
+            <div class="item_cont">
+                <img src="img/phone.png" alt="телефон_картинка">
+                <p>+7 999-999-99-99</p>
+            </div>
             <br>
-            <textarea name="" id="" cols="42" rows="5" placeholder="Напишите всё плохое, что обо мне думаете">
-            </textarea>
-            <p><input type="submit"value="Отправить донос"></p>
-        </form>
-    </div></div>
-    
-    
+            <h3>Оставьте мне сообщение</h3>
+            <br>
+            <form class="feedback" action="#">
+                <input class="name_feed" type="text" name="client_name_box" placeholder="Имя">
+                <input class="email_feed" type="text" name="email_box" placeholder="Email">
+                <br>
+                <textarea class="comment_feed" cols="42" rows="5" placeholder="Ваш комментарий">
+                </textarea>
+                <p><input class="button_contact" type="submit" value="Отправить форму"></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="map_google">
+        <p>I'M HERE</p>
+    </div>
     <footer>
-        <small>Данная работа подлежит свободному распространению без преследования Законом.</small>
+        <nav>
+            <div class="end">Copyright © 2022 %username.
+            </div>
+        </nav>
     </footer>
 </body>
-
-</html>
