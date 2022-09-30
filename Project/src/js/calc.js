@@ -1,3 +1,4 @@
+/*
 let site, design, adaptive;
 
 let calculator = {
@@ -42,74 +43,83 @@ function getAnswers() {
 }
 
 getAnswers();
+*/
 
-/*
-//Простой тип калькулятора, который нифига нормально не работает.
+//Простой тип калькулятора.
 
-    let time, prices;
-    time = 0;
+let time = 0,
     prices = 0;
 
-    function calc(){
+let calcFunction;
 
-    let siteType = prompt("Какой тип сайта Вас интересует? \n1. Сайт - Визитка \n2. Корпоративный сайт \n3. Интернет - магазин");
+calcFunction = function(){
+    
+    function calc1() {
 
-    if (siteType == 1) {
-        time += 1;
-        prices += 1000;
-    }else if (siteType == 2) {
-        time += 2;
-        prices += 2000;
-    }else if (siteType == 3) {
-        time += 3;
-        prices += 3000;
-    }else { alert ("Такого типа сайта не существует");
-        calc();
+        let siteType = prompt("Какой тип сайта Вас интересует? \n1. Сайт - Визитка \n2. Корпоративный сайт \n3. Интернет - магазин");
+
+        if (siteType == 1) {
+            time += 1;
+            prices += 1000;
+        } else if (siteType == 2) {
+            time += 2;
+            prices += 2000;
+        } else if (siteType == 3) {
+            time += 3;
+            prices += 3000;
+        } else {
+            alert("Такого типа сайта не существует");
+            calc1();
+        }
+
+        console.log(time, prices);
+    };
+
+    function calc2() {
+
+        let designType = prompt("Выберите дизайн вашего сайта \n1. Строгий, шаблонный \n2. Уникальный \n3. Третий вариант");
+
+        if (designType == 1) {
+            time += 1;
+            prices += 1000;
+        } else if (designType == 2) {
+            time += 2;
+            prices += 2000;
+        } else if (designType == 3) {
+            time += 3;
+            prices += 3000;
+        } else {
+            alert("Неверный дизайн");
+            calc2();
+            
+        }
+
+        console.log(time, prices);
+    };
+
+    function calc3() {
+
+        let adaptationType = prompt("Для каких устройств создаётся Ваш сайт? \n1. Только для ПК \n2. Только для мобильных устройств \n3. Для всех устройств с возможностью выхода в интернет");
+
+        if (adaptationType == 1) {
+            time += 1;
+            prices += 1000;
+        } else if (adaptationType == 2) {
+            time += 2;
+            prices += 2000;
+        } else if (adaptationType == 3) {
+            time += 3;
+            prices += 3000;
+        } else {
+            alert("Неверный вариант");
+            calc3();
+        }
+
+        console.log(time, prices);
+
+        alert("Сроки: " + time + " дня(-ей) " + "\nСтоимость: " + prices + " рублей");
+        return;
     }
-        
-    console.log(time, prices);
-        
-    let designType = prompt("Выберите дизайн вашего сайта \n1. Строгий, шаблонный \n2. Уникальный \n3. Третий вариант");
-        
-    if (designType == 1) {
-        time += 1;
-        prices += 1000;
-    }else if (designType == 2) {
-        time += 2;
-        prices += 2000;
-    }else if (designType == 3) {
-        time += 3;
-        prices += 3000;
-    }else { alert ("Неверный дизайн");
-        time = 0;
-        prices = 0;
-        calc();
-    }
-        
-    console.log(time, prices);
-        
-    let adaptationType = prompt("Для каких устройств создаётся Ваш сайт? \n1. Только для ПК \n2. Только для мобильных устройств \n3. Для всех устройств с возможностью выхода в интернет");
+};
 
-    if (adaptationType == 1) {
-        time += 1;
-        prices += 1000;
-    }else if (adaptationType == 2) {
-        time += 2;
-        prices += 2000;
-    }else if (adaptationType == 3) {
-        time += 3;
-        prices += 3000;
-    }else { alert ("Неверный вариант");
-        time = 0;
-        prices = 0;
-        calc();
-    }
-
-    console.log(time, prices);
-
-    alert ("Сроки: " + time + " дн(-я; -ей) " + "\nСтоимость: " + prices + " рублей");
-
-    }
-
-    calc();
-*/
+calcFunction();
