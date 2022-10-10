@@ -1,0 +1,21 @@
+
+html{
+    scroll-behavior: smooth;
+}
+:target{
+    scroll-margin-top: 50px;
+}
+
+h2{
+    color: darkslategray;
+    text-decoration: overline;
+}
+
+.element-animation{
+    opacity: 0.1;
+}
+
+.show-animation{
+    opacity: 1;
+    transition: opacity 3s;
+}

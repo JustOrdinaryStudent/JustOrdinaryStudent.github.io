@@ -1,0 +1,34 @@
+body{
+    padding: 50px;
+    font-family: arial, sans-serif;
+}
+
+.main_block{
+    border: 2px solid red;
+    max-width: 800px;
+    height: 800px;
+    margin: 0 auto; /*Лайфхак, который позволяет выравнивать блочные элементы по центру страницы "x"*/
+    position:relative;
+}
+
+.main_block div{
+    line-height: 50px; /*Высота линии*/
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.block_1{
+    background-color: yellow;
+}
+.block_2{
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1; /*Не работает с position: static, но работает с relative и absolute*/
+    width: 30%;
+}
+.block_3{
+    background-color: green;
+}
