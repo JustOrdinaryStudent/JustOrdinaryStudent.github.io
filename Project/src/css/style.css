@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Roboto:wght@300;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    font-weight: 600;
+    width: 100%;
+    height: 60px;
+    background: #334051;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Nabla', cursive;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 60px;
+    -webkit-animation: bounceInLeft 0.7s linear forwards 1;
+    -o-animation: bounceInLeft 0.7s linear forwards 1;
+    animation: bounceInLeft 0.7s linear forwards 1;
+}
+
+.menu li a {
+    color: #fff;
+}
+
+.menu li a: visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.white-btn {
+    color: #fff;
+}
+
+.white-btn:visited {
+    color: #fff;
+}
+
+.dropdown {
+    line-height: 60px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: url(../img/guy.png) 95% 100%/auto 85% no-repeat, url(../img/mainscreen.jpg) center/cover no-repeat;
+    text-align: center;
+}
+
+.title_container {
+    width: 100%;
+    float: left;
+    margin-top: 10%;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.title_container h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: #334051;
+    transition-duration: 0.8s;
+    -webkit-animation: backInDown 1s 1s backwards;
+    -o-animation: backInDown 1s 1s backwards;
+    animation: backInDown 1s 1s backwards;
+}
+
+.title_container h1:hover {
+    color: #f2a239;
+}
+
+.title_container h3 {
+    font-size: 20px;
+    color: #81818f;
+    -webkit-animation: backInLeft 1s 1.5s backwards;
+    -o-animation: backInLeft 1s 1.5s backwards;
+    animation: backInLeft 1s 1.5s backwards;
+}
+
+.title_container input {
+    background: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #81818f;
+    border: 2px solid #81818f;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 30px 0 0 20px;
+    -webkit-animation: buttons_visible 1s 3s backwards;
+    -o-animation: buttons_visible 1s 3s backwards;
+    animation: buttons_visible 1s 3s backwards;
+}
+
+@keyframes buttons_visible {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .title_container h1,
+    .title_container h3,
+    .title_container input {
+        color: #fff;
+        text-shadow: 0 2px 3px #000;
+        z-index: 2;
+        position: relative;
+    }
+
+    .title_container input {
+        border: 2px solid #fff;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .main::after {
+        content: "";
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+}
+
+.about_me {
+    height: 721px;
+    background: #fcfdfd;
+    -webkit-box-shadow: 0px 0px 27px -9px rgba(34, 60, 80, 1) inset;
+    -moz-box-shadow: 0px 0px 27px -9px rgba(34, 60, 80, 1) inset;
+    box-shadow: 0px 0px 27px -9px rgba(34, 60, 80, 1) inset;
+}
+
+h6 {
+    margin: 0 auto;
+    border-bottom: 4px solid #f2a239;
+    width: 80px;
+    padding-top: 20px;
+}
+
+.about_me {
+    padding-top: 100px;
+    padding-bottom: 96px;
+}
+
+.about_me_container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #263244;
+    text-transform: uppercase;
+}
+
+.about_me_container img {
+    margin: 25px 0 15px;
+}
+
+.about_me_container input {
+    background: url(../img/download.svg) 3% / 15% no-repeat;
+    font-size: 13px;
+    font-weight: bold;
+    color: #334051;
+    border: 2px solid #334051;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: end;
+    width: 150px;
+    margin-top: 5%;
+}
+
+.skills {
+    background: url(../img/skills_screen.jpg) center/cover fixed no-repeat;
+}
+
+.skills_container {
+    padding-top: 100px;
+    padding-bottom: 96px;
+}
+
+.skills_container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #263244;
+    text-transform: uppercase;
+}
+
+.skill_item h3 {
+    font-weight: 600;
+    color: #f2a239;
+}
+
+.skill_item img {
+    margin: 20px 0;
+    height: 40px;
+}
+
+.portfolio {
+    background: #fcfdfd;
+    -webkit-box-shadow: 0px 10px 10px -9px rgba(34, 60, 80, 0.6) inset;
+    -moz-box-shadow: 0px 10px 10px -9px rgba(34, 60, 80, 0.6) inset;
+    box-shadow: 0px 10px 10px -9px rgba(34, 60, 80, 0.6) inset;
+}
+
+.portfolio_container {
+    padding-top: 100px;
+    padding-bottom: 96px;
+}
+
+.portfolio_container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #263244;
+    text-transform: uppercase;
+}
+
+.portfolio_container h3 {
+    font-weight: 600;
+}
+
+.portfolio_t1 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+.portfolio_container img {
+    width: 100%;
+}
+
+.alpha-button {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: darkcyan;
+    border-radius: 5px;
+    padding: 8px 40px;
+    margin-top: 25px;
+}
+
+.beta-button {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 8px 40px;
+    margin-top: 25px;
+}
+
+.gamma-button {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: firebrick;
+    border-radius: 5px;
+    padding: 8px 40px;
+    margin-top: 25px;
+}
+
+.calculator {
+    height: 800px;
+    background: #fcfdfd;
+    -webkit-box-shadow: 0px -10px 10px -9px rgba(34, 60, 80, 0.6) inset;
+    -moz-box-shadow: 0px -10px 10px -9px rgba(34, 60, 80, 0.6) inset;
+    box-shadow: 0px -10px 10px -9px rgba(34, 60, 80, 0.6) inset;
+}
+
+.calculator_container {
+    height: 760px;
+    padding-top: 100px;
+    padding-bottom: 96px;
+    -webkit-box-shadow: 0px 0px 18px 2px rgba(34, 60, 80, 0.43) inset;
+    -moz-box-shadow: 0px 0px 18px 2px rgba(34, 60, 80, 0.43) inset;
+    box-shadow: 0px 0px 18px 2px rgba(34, 60, 80, 0.43) inset;
+}
+
+.calculator_container h2 {
+    font-weight: bold;
+}
+
+.calculator_container h3 {
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.calculator_border {
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+}
+
+.calculator_footer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.calculator-btn {
+    display: block;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #00b6af;
+    color: #fff;
+}
+
+.statistic {
+    background: url(../img/stats_screen.jpg) center/cover fixed no-repeat;
+}
+
+.statistic_container {
+    padding-top: 100px;
+    padding-bottom: 96px;
+}
+
+.statistic_container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #263244;
+    text-transform: uppercase;
+}
+
+.statistic_item img {
+    margin: 10px 0;
+    height: 60px;
+}
+
+.statistic_item h3 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.statistic_item p {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.reviews {
+    height: 650px;
+    background: #fcfdfd;
+    -webkit-box-shadow: 0px 0px 18px 2px rgba(34, 60, 80, 0.43) inset;
+    -moz-box-shadow: 0px 0px 18px 2px rgba(34, 60, 80, 0.43) inset;
+    box-shadow: 0px 0px 18px 2px rgba(34, 60, 80, 0.43) inset;
+}
+
+.reviews_container {
+    padding-top: 100px;
+    padding-bottom: 96px;
+}
+
+.reviews_container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #263244;
+    text-transform: uppercase;
+}
+
+.review {
+    font-size: 18px;
+}
+
+.review img {
+    margin: 0 auto;
+    height: 120px;
+}
+
+.contacts {
+    background: url(../img/contats_screen.jpg) center/cover no-repeat;
+}
+
+.contacts_container {
+    padding-top: 100px;
+    padding-bottom: 180px;
+    color: #fff;
+}
+
+.contacts_container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contacts_data_item {
+    transition-duration: 0.8s;
+}
+
+.contacts_data_item img {
+    height: 30px;
+}
+
+.contacts_data_item p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.feed-txt {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.contacts_opacity {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.contacts_send {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: none;
+}
+
+.map img {
+    display: block;
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    background: #334051;
+    color: #fff;
+    text-align: center;
+}
+
+.footer_container {
+    font-family: 'Nabla', cursive;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+/*Анимация для кнопки "Обо мне"*/
+
+.about_me_container input {
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.about_me_container input:hover {
+    background-color: #6d7682;
+    color: #fff;
+}
+
+.about_me_container input:active {
+    transform: scale(1.1);
+}
+
+/*Анимация для menu>li*/
+
+.menu li a {
+    transition: all 0.3s;
+    transform: scale(1);
+    color: #fff;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    color: #ef941c;
+}
+
+.menu li a:active {
+    transform: scale(1.2);
+}
+
+.menu li .active {
+    color: #1dcdf2;
+    border: 1px dashed #ef941c;
+    -webkit-animation: pulse 1.3s forwards infinite;
+    -o-animation: pulse 1.3s forwards infinite;
+    animation: pulse 1.3s forwards infinite;
+}
+
+.menu li:nth-child(1) {
+    -webkit-animation: bounceInDown 1s forwards;
+    -o-animation: bounceInDown 1s forwards;
+    animation: bounceInDown 1s forwards;
+}
+
+.menu li:nth-child(2) {
+    -webkit-animation: bounceInDown 1.2s forwards;
+    -o-animation: bounceInDown 1.2s forwards;
+    animation: bounceInDown 1.2s forwards;
+}
+
+.menu li:nth-child(3) {
+    -webkit-animation: bounceInDown 1.4s forwards;
+    -o-animation: bounceInDown 1.4s forwards;
+    animation: bounceInDown 1.4s forwards;
+}
+
+.menu li:nth-child(4) {
+    -webkit-animation: bounceInDown 1.6s forwards;
+    -o-animation: bounceInDown 1.6s forwards;
+    animation: bounceInDown 1.6s forwards;
+}
+
+.menu li:nth-child(5) {
+    -webkit-animation: bounceInDown 1.8s forwards;
+    -o-animation: bounceInDown 1.8s forwards;
+    animation: bounceInDown 1.8s forwards;
+}
+
+.menu li:nth-child(6) {
+    -webkit-animation: bounceInDown 2s forwards;
+    -o-animation: bounceInDown 2s forwards;
+    animation: bounceInDown 2s forwards;
+}
+
+.menu li:nth-child(7) {
+    -webkit-animation: bounceInRight 1.2s 2s backwards;
+    -o-animation: bounceInRight 1.2s 2s backwards;
+    animation: bounceInRight 1.2s 2s backwards;
+}
+
+/*Анимация для кнопки "Главная"*/
+
+.title_container input {
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.title_container input:hover {
+    background: #6d7682;
+    color: #fff;
+}
+
+.title_container input:active {
+    transform: scale(1.2);
+}
+
+/*Анимация для кнопки "Контакты"*/
+
+.contacts_send {
+    transition-duration: 0.3s;
+}
+
+.contacts_send:hover {
+    background: #fff;
+    font-weight: bold;
+    color: #263244;
+}
+
+.contacts_send:active {
+    opacity: 0.3;
+    font-size: 16px;
+    color: #fff;
+    transform: scaleX(1.3);
+}
+
+/*Контакты. Увеличение значков при наводке*/
+
+.contacts_data_item:hover {
+    transform: scale(1.05);
+}
+
+/*Статистика. Смена цвета при наводке*/
+
+.statistic_container .statistic_item h3 {
+    transition-duration: 0.5s;
+}
+
+.statistic_container .statistic_item p {
+    transition-duration: 0.5s;
+}
+
+.statistic_container .statistic_item h3:hover {
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.statistic_container .statistic_item p:hover {
+    color: #f2a239;
+}
+
+/*Кейсы. Анимация кнопки*/
+
+.case-button {
+    transition: all 0.3s ease 0s;
+}
+
+.case-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.case-button:active {
+    transform: scaleX(1.1);
+    color: #8f8f8f;
+}
+
+/*Калькулятор. Анимация кнопки*/
+
+#calc-button {
+    transition: all 0.3s ease 0s;
+}
+
+#calc-button:hover {
+    background-color: rgba(0, 182, 175, 0.3);
+    color: #000;
+}
+
+#calc-button:active {
+    transform: scaleX(1.1);
+    color: rgba(0, 0, 0, 0.0);
+}
+
+
+/*Анимация чисел. Появление*/
+
+.number_animation {
+    opacity: 0;
+}
+
+/*Анимация секций. Появление*/
+
+.opacity-animation {
+    opacity: 0;
+}
+
+.show-opacity-animation {
+    opacity: 1;
+    transition: opacity 1.2s;
+}
+
+/*Модальное окно с почтой*/
+
+.modal-content {
+    display: none;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#register-your-email {
+    display: block;
+    border: 2px solid #f2a239;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-width: 300px;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+.register-now {
+    display: block;
+    transition-duration: 0.4s;
+    background: #ff837d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 10px;
+    transition-duration: 1s;
+}
+
+.register-now:hover{
+    background: #0da9f2;
+    color: #fff;
+}
+
+.register-now:active{
+    transform: scale(1.2);
+}
+
+#cboxLoadedContent{
+    width: 400px;
+    height: 210px;
+    background: url(../img/modal_sale.jpg) center/cover no-repeat;
+}

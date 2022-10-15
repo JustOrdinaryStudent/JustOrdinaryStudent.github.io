@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description">
+    <meta name="author" content="%username">
+    <meta name="robots" content="all">
+    <meta property="og:title" content="OG Title">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JS 11-12th Part Homework</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Отвечает за создание модальных окон на jQuery-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jackmoore/colorbox/master/example1/colorbox.css">
+    <!--Карусель Slick для отзывов-->
+    <link rel="stylesheet" href="css/slick.css">
+    <!--Классическая тема для карусели Slick-->
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <!--Карусель для кейсов. Отключена, строки удалены, но работала отлично
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">-->
+
+    <!--Поп-ап картинки-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!--Анимации animate.style-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--Загрузчик-->
+    <link rel="stylesheet" href="css/loader.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="loaderArea">
+        <div class="loader">
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-3 col-6 d-flex align-items-center">
+                        <div class="logo">%username</div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7 col-lg-7 offset-xxl-4 offset-xl-3 offset-lg-2 pt-2 mt-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#main-id">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about-me-id">Обо мне</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#skills-id">Услуги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#portfolio-id">Кейсы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#calculator-id">Прайс</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#reviews-id">Отзывы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contacts-id">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex flex-column d-lg-none align-items-end text">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Меню</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#main-id">Главная</a></li>
+                                <li><a class="dropdown-item" href="#about-me-id">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#portfolio-id">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#calculator-id">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#reviews-id">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#contacts-id">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal-content">
+        <h3 class="text-center mt-4">Зарегистрируйтесь прямо сейчас</h3>
+        <label class="text-center" for="your-email">и получите скидку <b>15%</b> на любую первую услугу</label>
+        <input class="text-center" placeholder="Ваш email" id="register-your-email">
+        <button class="register-now">Зарегистрироваться</button>
+    </div>
+
+    <main>
+
+        <section class="main section" id="main-id">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6">
+                        <div class="title_container">
+                            <h1 id="hello">Привет <br> Я %username</h1>
+                            <h3>Фулл стэк Веб-разработчик</h3>
+
+                            <input type="button" value="Обо мне" onClick="window.location='#about-me-id'">
+
+                            <input type="button" value="Мои работы" onClick="window.location='#portfolio-id'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_me section" id="about-me-id">
+            <div class="about_me_container container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-4 text-center opacity-animation">
+                        <h2>Обо мне</h2>
+                        <h6>
+                            <!--Orange Line-->
+                        </h6>
+                        <img class="d-block mx-auto" src="img/about_me_guy.png" alt="">
+                    </div>
+                </div>
+                <div class="row justify-content-center opacity-animation">
+                    <div class="col-12 col-sm-11 col-md-10 text-center text-md-start">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius excepturi minus provident qui, facere quod saepe nostrum reiciendis facilis quo! Commodi odit quaerat fugit quam ducimus a facere nulla eaque.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus maxime aut dolorem et, minus voluptatibus obcaecati error ducimus, ratione esse.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center opacity-animation">
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <input type="button" value="Скачать резюме">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="skills section" id="skills-id">
+            <div class="skills_container container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 text-center opacity-animation">
+                        <h2>Что я умею</h2>
+                        <h6></h6>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center pt-0 mt-0 pt-md-5 mt-md-5 opacity-animation">
+                    <div class="skill_item col-12 col-sm-6 col-md-3">
+                        <img src="img/logo11.png" alt="">
+                        <h3>Веб-дизайн</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio assumenda natus id neque iusto veniam.</p>
+                    </div>
+                    <div class="skill_item col-12 col-sm-6 col-md-3">
+                        <img src="img/logo12.png" alt="">
+                        <h3>Разработка</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nostrum inventore, distinctio deserunt error, sed consequuntur ad unde.</p>
+                    </div>
+                    <div class="skill_item col-12 col-sm-6 col-md-3">
+                        <img src="img/logo13.png" alt="">
+                        <h3>CEO оптимизация</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque cupiditate perspiciatis tempora odio ab earum.</p>
+                    </div>
+                    <div class="skill_item col-12 col-sm-6 col-md-3">
+                        <img src="img/logo14.png" alt="">
+                        <h3>Маркетинг</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam et, nemo reiciendis vitae laudantium natus modi in exercitationem ratione beatae quis distinctio eaque asperiores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio-id">
+            <div class="portfolio_container container">
+                <div class="row justify-content-center opacity-animation">
+                    <div class="col-12 col-sm-4 text-center">
+                        <h2>Кейсы</h2>
+                        <h6></h6>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center opacity-animation">
+                        <p class="portfolio_t1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, provident, minus. Iste deleniti eaque unde sit quam temporibus, itaque enim dolores beatae aliquid. Qui aperiam eligendi quia consectetur sunt optio.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/case_photo_1.png" href="img/case_photo_3.png" class="d-block image-link opacity-animation" alt="Case-1">
+                                    <div class="case_bottom row justify_content_center opacity-animation">
+                                        <div class="left_side col-12 col-md-3 col-lg-2 mt-3 text-center text-md-start">
+                                            <h3>Client:</h3>
+                                            <p>Компания "One"</p>
+                                            <h3>Website:</h3>
+                                            <a href="https://www.google.com">Google One</a>
+                                            <br>
+                                        </div>
+
+                                        <div class="right_side col-12 col-md-8 col-lg-10 mt-3 text-center text-md-start">
+                                            <h3>Проект: Альфа</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum cumque nihil veritatis ratione. Omnis fuga nisi est quam autem inventore, quaerat, neque. Nostrum nisi eius adipisci esse libero voluptatem quod.</p>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <input type="button" class="alpha-button case-button mb-5" value="Visit site">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/case_photo_2.png" href="img/case_photo_3.png" class="d-block image-link opacity-animation" alt="Case-2">
+                                    <div class="case_bottom row justify_content_center opacity-animation">
+                                        <div class="left_side col-12 col-md-3 col-lg-2 mt-3 text-center text-md-start">
+                                            <h3>Client:</h3>
+                                            <p>Компания: "Two"</p>
+                                            <h3>Website:</h3>
+                                            <a href="https://www.google.com">Google Two</a>
+                                            <br>
+                                        </div>
+                                        <div class="right_side col-12 col-md-8 col-lg-10 mt-3 text-center text-md-start">
+                                            <h3>Проект: Бета</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste provident officia odio esse saepe quod enim. Quod enim exercitationem quia nobis esse.Quod enim exercitationem quia nobis esse.</p>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <input type="button" class="beta-button case-button mb-5" value="Visit site">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/case_photo_3.png" href="img/case_photo_3.png" class="d-block image-link opacity-animation" alt="Case-3">
+                                    <div class="case_bottom row justify_content_center opacity-animation">
+                                        <div class="left_side col-12 col-md-3 col-lg-2 mt-3 text-center text-md-start">
+                                            <h3>Client:</h3>
+                                            <p>Компания: "Three"</p>
+                                            <h3>Website:</h3>
+                                            <a href="https://www.google.com">Google Three</a>
+                                            <br>
+                                        </div>
+
+                                        <div class="right_side col-12 col-md-8 col-lg-10 mt-3 text-center text-md-start">
+                                            <h3>Проект: Гамма</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem placeat corporis distinctio autem ex rerum aliquam accusantium beatae? Velit suscipit similique deserunt, ut ab illo, laboriosam ex eligendi vel reiciendis.</p>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <input type="button" id class="gamma-button case-button mb-5" value="Visit site">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="fotorama">
+                            <img class="image-link" href="img/case_photo_1.png" src="img/case_photo_1.png">
+                            <img class="image-link" href="img/case_photo_2.png" src="img/case_photo_2.png">
+                            <img class="image-link" href="img/case_photo_3.png" src="img/case_photo_3.png">
+                        </div>-->
+
+            </div>
+        </section>
+
+        <section class="calculator section" id="calculator-id">
+            <div class="calculator_container container col-12 col-sm-10 col-md-10 col-lg-8">
+                <div class="row justify-content-center opacity-animation">
+                    <div class="col-8 text-center">
+                        <h2>Расчет стоимости</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center opacity-animation">
+                    <div class="col-10 pt-5">
+                        <div class="calculator-select">
+                            <h3>Тип Сайта</h3>
+                            <select id="calc-select-a" class="form-select form-select-lg mb-1" aria-label=".form-select-lg" aria-label="Пример выбора по умолчанию">
+                                <option selected disabled days="0" price="0">Выберите тип сайта..</option>
+                                <option price="1000" days="1">Шаблонный</option>
+                                <option price="2000" days="2">Индвидуальный</option>
+                                <option price="10000" days="5">Супер-уникальный</option>
+                            </select>
+                        </div>
+                        <div class="calculator-select mt-4">
+                            <h3>Дизайн</h3>
+                            <select id="calc-select-b" class="form-select form-select-lg mb-1" aria-label=".form-select-lg" aria-label="Пример выбора по умолчанию">
+                                <option selected disabled days="0" price="0">Выберите дизайн...</option>
+                                <option price="1000" days="1">Так-себе дизайн</option>
+                                <option price="2000" days="2">Стандартный дизайн</option>
+                                <option price="10000" days="5">Дорого и красиво</option>
+                            </select>
+                        </div>
+                        <div class="calculator-select mt-4 mb-4">
+                            <h3>Адаптивность</h3>
+                            <select id="calc-select-c" class="form-select form-select-lg mb-1" aria-label=".form-select-lg" aria-label="Пример выбора по умолчанию">
+                                <option selected disabled days="0" price="0">Выберите вариант...</option>
+                                <option price="1000" days="1">Только для ПК</option>
+                                <option price="2000" days="2">Только для Мобильных устройств</option>
+                                <option price="10000" days="5">Для ПК и Мобильных устройств</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row calculator_footer opacity-animation">
+                    <div class="days col-5 offset-1 calculator_border">
+                        <p>Сроки</p>
+                    </div>
+                    <div id="days-id" class="digit col-5 text-end calculator_border">
+                        <p class="digit-sum">0</p>
+                    </div>
+                    <div class="price col-5 offset-1">
+                        <p>Стоимость</p>
+                    </div>
+                    <div id="price-id" class="digit col-5 text-end">
+                        <p class="digit-sum">0</p>
+                    </div>
+                </div>
+                <button type="button" id="calc-button" class="btn btn-outline-secondary calculator-btn mx-auto mt-4 opacity-animation">Оставить заявку</button>
+            </div>
+        </section>
+
+        <section class="statistic" id="statistic-id">
+            <div class="statistic_container container opacity-animation">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2>Немного статистики</h2>
+                        <h6></h6>
+                    </div>
+                </div>
+
+                <div id="stat-itm" class="row justify-content-center text-center pt-3 mt-3 pt-md-5 mt-md-5">
+                    <div class="statistic_item col-12 col-sm-8 col-md-3">
+                        <img src="img/logo21.png" alt="">
+                        <h3 class="number_animation">999</h3>
+                        <p>Счастливых клиентов</p>
+                    </div>
+                    <div class="statistic_item col-12 col-sm-8 col-md-3">
+                        <img src="img/logo22.png" alt="">
+                        <h3 class="number_animation">3000</h3>
+                        <p>Часов работы</p>
+                    </div>
+                    <div class="statistic_item col-12 col-sm-8 col-md-3">
+                        <img src="img/logo23.png" alt="">
+                        <h3 class="number_animation">180</h3>
+                        <p>Проектов завершено</p>
+                    </div>
+                    <div class="statistic_item col-12 col-sm-8 col-md-3">
+                        <img src="img/logo24.png" alt="">
+                        <h3 class="number_animation">50</h3>
+                        <p>Наград получено</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews section" id="reviews-id">
+            <div class="reviews_container container opacity-animation">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2>Отзывы</h2>
+                        <h6></h6>
+                    </div>
+                    <div class="review-slick">
+                        <div>
+                            <div class="row justify-content-center mt-5">
+                                <div class="review col-12 col-lg-8 text-center">
+                                    <img src="img/review-1-photo.png" alt="">
+                                    <p class="mt-5">Хороший отзыв. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis temporibus eum odio facere, modi iure est, doloremque consequuntur necessitatibus quaerat porro alias id? Ipsum, consectetur itaque vel sapiente commodi velit, sunt at quas consequuntur, in ut animi sit facilis quibusdam?</p>
+                                    <p class="name mt-4 mb-5"> <b>Михаил</b>, Директор крупного предприятия</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row justify-content-center mt-5">
+                                <div class="review col-12 col-lg-8 text-center">
+                                    <img src="img/review-2-photo.png" alt="">
+                                    <p class="mt-5">Отличный отзыв. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ad, repellat beatae accusantium recusandae ullam nihil, eum, ratione mollitia cupiditate quo eligendi nobis. Excepturi saepe, quo! Dicta ea distinctio eveniet.</p>
+                                    <p class="name mt-4 mb-5"> <b>Кузя</b>, Местный любимец</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row justify-content-center mt-5">
+                                <div class="review col-12 col-lg-8 text-center">
+                                    <img src="img/review-3-photo.png" alt="">
+                                    <p class="mt-5">Так себе отзыв. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique possimus eligendi provident modi ratione tenetur, minima, reiciendis ea. Veniam corrupti soluta mollitia deleniti magni! Officia ullam cumque sunt suscipit minima?</p>
+                                    <p class="name mt-4 mb-5"> <b>Роберт</b>, Миллиардер</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contacts section" id="contacts-id">
+            <div class="contacts_container container opacity-animation">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2>Мои контакты</h2>
+                        <h6></h6>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center mt-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, doloribus!</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center pt-0 mt-0 pt-md-2 mt-md-2">
+                    <div class="contacts_data_item col-12 col-sm-4 col-lg-2 text-center">
+                        <img src="img/logo31.png" alt="geo">
+                        <p>Градбург, Уличный проспект 99</p>
+                    </div>
+                    <div class="contacts_data_item col-12 col-sm-4 col-lg-2 text-center">
+                        <img src="img/logo32.png" alt="mail">
+                        <p>info@mycompany.com</p>
+                    </div>
+                    <div class="contacts_data_item col-12 col-sm-4 col-lg-2 text-center">
+                        <img src="img/logo33.png" alt="phone">
+                        <p>+9 999-999-99-99</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="feed-txt col-8 text-center">
+                        <p>Свяжитесь с нами</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="feedback-name col-6 col-xl-4 text-center">
+                        <input type="name" class="form-control contacts_opacity col-4" id="c-name" placeholder="Имя">
+                    </div>
+                    <div class="feedback-email col-6 col-xl-4 text-center">
+                        <div class="mb-2">
+                            <input type="email" class="form-control contacts_opacity" id="c-email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="feedback-comments col-12 col-xl-8 text-center">
+                        <div class="mb-2">
+                            <textarea class="form-control contacts_opacity" id="c-comments" placeholder="Ваш комментарий" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-button col-12 text-center">
+                    <input class="contacts_send" type="button" value="Отправить">
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <img src="img/map.jpg" alt="">
+        </section>
+
+        <section class="footer">
+            <div class="footer_container container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <p>Copyright 2022 %username.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <!--Отвечает за создание модальных окон на jQuery-->
+    <script src="js/jquery.colorbox-min.js"></script>
+    <!--Поп-ап для изображений. Выводит изображение на экран-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!--Горячо любимый Бутстрап 5.0-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--Карусель для отзывов-->
+    <script src="js/slick.min.js"></script>
+
+    <!--Анимация для чисел в статистике-->
+    <script src="js/jquery.spincrement.min.js"></script>
+
+    <!--3 калькулятора, один глюченный-->
+    <script src="js/calc.js"></script>
+
+    <!-- Фоторама. Карусель для кейсов. Не используется в данный момент, но работало, вполне годно.
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>-->
+
+    <script src="js/myScript.js"></script>
+
+</body>
+
+</html>
